@@ -1,16 +1,32 @@
 """Compute values in the Fibonacci sequence using different approaches."""
 
-# TODO: Import all of the needed type annotations
+# Import all of the needed type annotations
+from pyinstrument import Profiler  # type: ignore
+
+import typer
+
+from rich.console import Console
+
+import os
+import psutil  # type: ignore
+import time
+
+from resource import getrusage, RUSAGE_SELF
+
+from fibonaccicreator import fibonacci
 
 
 def fibonacci_recursivelist(number: int) -> List[int]:
     """Start with 0 and compute up to and include the number-th Fibonacci number using recursion and a list."""
     # Reference:
     # https://stackoverflow.com/questions/33325683/python-creating-a-list-of-the-first-n-fibonacci-numbers
-    # TODO: Base case: return [0, 1] when number is either 0 or 1
-    # TODO: Recursive case: perform the computation for number - 1 and
+    # Base case: return [0, 1] when number is either 0 or 1
+    if number in {0, 1} #Base Case
+        return number
+    # Recursive case: perform the computation for number - 1 and
     # then append to the list the two previous computations added together
-    # TODO: Finally, return the current version of the list.
+    return fibonacci_recursivelist(number - 1) + fibonacci_recursivelist(number - 2) #Recursive Case
+    # Finally, return the current version of the list.
 
 
 def fibonacci_recursivetuple(number: int) -> Tuple[int, ...]:
