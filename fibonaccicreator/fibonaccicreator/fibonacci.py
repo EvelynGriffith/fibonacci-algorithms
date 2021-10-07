@@ -21,11 +21,12 @@ def fibonacci_recursivelist(number: int) -> List[int]:
     # Reference:
     # https://stackoverflow.com/questions/33325683/python-creating-a-list-of-the-first-n-fibonacci-numbers
     # Base case: return [0, 1] when number is either 0 or 1
-    if number in {0, 1} #Base Case
-        return number
+    if number == 0 or number == 1:
+        return 1
+    else: 
     # Recursive case: perform the computation for number - 1 and
     # then append to the list the two previous computations added together
-    return fibonacci_recursivelist(number - 1) + fibonacci_recursivelist(number - 2) #Recursive Case
+        return fibonacci_recursivelist(number - 1) + fibonacci_recursivelist(number - 2)
     # Finally, return the current version of the list.
 
 
@@ -43,30 +44,43 @@ def fibonacci_recursivetuple(number: int) -> Tuple[int, ...]:
 
 def fibonacci_iterativetuple(number: int) -> Tuple[int, ...]:
     """Start with 0 and compute up to and including the number-th Fibonacci number using iteration and a tuple."""
-    # TODO: create an empty tuple that will ultimately contain the results
-    # TODO: set the initial conditions of the sequence
+    # create an empty tuple that will ultimately contain the results
+    result = ()
+    # set the initial conditions of the sequence
     # Note: start at 0 and 1, not at 1 and 1 like in the course slides
     # Note: different start is to ensure consistency with this article:
     # https://realpython.com/fibonacci-sequence-python/
-    # TODO: iterate from zero to the (number)th number
-    # --> TODO: store the value of a in the tuple
-    # --> TODO: move to the next value such that:
-    # --> TODO: a gets the current value of b
-    # --> TODO: b gets the current value of a + b
-    # TODO: return the final tuple that contains the fibonacci numbers
+    a = 1
+    b = 1
+    # iterate from zero to the (number)th number
+    for i in range(number):
+    # --> store the value of a in the tuple
+        result += (a,)
+    # --> move to the next value such that:
+    # --> a gets the current value of b
+    # --> b gets the current value of a + b
+        a, b = b, a + b
+    # return the final tuple that contains the fibonacci numbers
+    return result
 
 
 def fibonacci_iterativelist(number: int) -> List[int]:
     """Start with 0 and compute up to and including the number-th Fibonacci number using a list."""
-    # TODO: create an empty list that will ultimately contain the results
-    # TODO: set the initial conditions of the sequence
+    # create an empty list that will ultimately contain the results
+    result = []
+    # set the initial conditions of the sequence
     # Note: start at 0 and 1, not at 1 and 1 like in the course slides
     # Note: different start is to ensure consistency with this article:
     # https://realpython.com/fibonacci-sequence-python/
-    # TODO: set the initial conditions of the sequence
-    # TODO: iterate from zero to the (number)th number
-    # --> TODO: store the value of a in the list
-    # --> TODO: move to the next value such that:
-    # --> TODO: a gets the current value of b
-    # --> TODO: b gets the current value of a + b
-    # TODO: return the final tuple that contains the fibonacci numbers
+    a = 1
+    b = 1
+    # iterate from zero to the (number)th number
+    for i in range(number):
+    # --> store the value of a in the list
+        result.append(a)
+    # --> move to the next value such that:
+    # --> a gets the current value of b
+    # --> b gets the current value of a + b
+        a, b = b, a + b
+    # return the final tuple that contains the fibonacci numbers
+    return result
