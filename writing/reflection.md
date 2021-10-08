@@ -88,10 +88,10 @@ These couple lines of code are defining the fibonaccicreator function and defini
 #### A code segment that calls a function based on its name in a string
 
 ```
-    function_to_call = getattr(fibonacci, function)
+function_to_call = getattr(fibonacci, function)
 ```
-TODO: Write at least one paragraph to explain the request source code
-TODO: Explain exactly how Python can call a function using a string
+
+This code is creating a new variable called function_to_call which is then using the getattr command to call functions over from the module called fibonacci.py. This is unique because instead of just using a function call command this will turn the input into a string and make it so that the function can be called by name within the CLI function.
 
 ## Professional Development
 
