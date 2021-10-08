@@ -7,7 +7,7 @@ authors = ["Gregory M. Kapfhammer <gkapfham@allegheny.edu>"]
 [tool.poetry.scripts]
 fibonaccicreator = "fibonaccicreator.main:cli"
 
-[tool.poetry.dependencies]
+[tool.poetry.dependencies] 
 python = "^3.8"
 typer = {extras = ["all"], version = "^0.3.2"}
 rich = "^10.9.0"
