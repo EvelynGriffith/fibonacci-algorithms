@@ -33,7 +33,7 @@ def fibonacci_recursivetuple(number: int) -> Tuple[int, ...]:
     # Finally, return the current version of the tuple.
     else:
         x = fibonacci_recursivetuple(number - 1)
-        rTuple += (x[-1] + x[-2],)
+        rTuple += (x[number - 1] + x[number - 2],)
         return rTuple
 
 
