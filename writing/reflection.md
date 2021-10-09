@@ -13,6 +13,23 @@ I added the to do's in this section into my performance analysis paragraphs
 ```
 🧳 Awesome, the chosen type of approach is the iterativetuple!
 
+🧮 The program will compute up to the 100000th Fibonacci number!
+
+🤷 So, was this an efficient approach for storing the Fibonacci sequence?
+
+Estimated overall memory according to the operating system:
+   479.671875 megabytes
+
+Estimated peak memory according to the operating system:
+   471.59375 megabytes
+
+Estimated execution time according to the simple timer:
+    156.78 seconds
+```
+
+```
+🧳 Awesome, the chosen type of approach is the iterativetuple!
+
 🧮 The program will compute up to the 10000th Fibonacci number!
 
 🤷 So, was this an efficient approach for storing the Fibonacci sequence?
@@ -21,27 +38,10 @@ Estimated overall memory according to the operating system:
    34.3984375 megabytes
 
 Estimated peak memory according to the operating system:
-   35.125 megabytes
+   35.203125 megabytes
 
 Estimated execution time according to the simple timer:
-    0.54 seconds
-```
-
-```
-🧳 Awesome, the chosen type of approach is the iterativetuple!
-
-🧮 The program will compute up to the 1000th Fibonacci number!
-
-🤷 So, was this an efficient approach for storing the Fibonacci sequence?
-
-Estimated overall memory according to the operating system:
-   29.15625 megabytes
-
-Estimated peak memory according to the operating system:
-   35.0859375 megabytes
-
-Estimated execution time according to the simple timer:
-    0.01 seconds
+    0.51 seconds
 ```
 
 #### Two outputs from running the `iterativelist`
@@ -49,35 +49,35 @@ Estimated execution time according to the simple timer:
 ```
 🧳 Awesome, the chosen type of approach is the iterativelist!
 
-🧮 The program will compute up to the 10000th Fibonacci number!
+🧮 The program will compute up to the 450000th Fibonacci number!
 
 🤷 So, was this an efficient approach for storing the Fibonacci sequence?
 
 Estimated overall memory according to the operating system:
-   34.125 megabytes
+   8.799755096435547 gigabytes
 
 Estimated peak memory according to the operating system:
-   35.05078125 megabytes
+   8.790401458740234 gigabytes
 
 Estimated execution time according to the simple timer:
-    0.02 seconds
+    30.50 seconds
 ```
 
 ```
-🧳 Awesome, the chosen type of approach is the iterativelist!
+🧳 Awesome, the chosen type of approach is the iterativelist!   
 
-🧮 The program will compute up to the 1000th Fibonacci number!
+🧮 The program will compute up to the 100000th Fibonacci number!
 
 🤷 So, was this an efficient approach for storing the Fibonacci sequence?
 
 Estimated overall memory according to the operating system:
-   29.1640625 megabytes
+   476.63671875 megabytes
 
-Estimated peak memory according to the operating system:
-   35.02734375 megabytes
+Estimated peak memory according to the operating system:   
+   467.3359375 megabytes
 
-Estimated execution time according to the simple timer:
-    0.00 seconds
+Estimated execution time according to the simple timer:    
+    0.70 seconds
 ```
 
 #### Two outputs from running the `recursivetuple`
@@ -85,49 +85,35 @@ Estimated execution time according to the simple timer:
 ```
 🧳 Awesome, the chosen type of approach is the recursivetuple!
 
-🧮 The program will compute up to the 10000th Fibonacci number!
+🧮 The program will compute up to the 989th Fibonacci number!
 
-Traceback (most recent call last):
-  File "<string>", line 1, in <module>
-  File "/root/.cache/pypoetry/virtualenvs/fibonaccicreator-6gE1vKXj-py3.8/lib/python3.8/site-packages/typer/main.py", line 214, in __call__    return get_command(self)(*args, **kwargs)
-  File "/root/.cache/pypoetry/virtualenvs/fibonaccicreator-6gE1vKXj-py3.8/lib/python3.8/site-packages/click/core.py", line 829, in __call__    return self.main(*args, **kwargs)
-  File "/root/.cache/pypoetry/virtualenvs/fibonaccicreator-6gE1vKXj-py3.8/lib/python3.8/site-packages/click/core.py", line 782, in main    
-    rv = self.invoke(ctx)
-  File "/root/.cache/pypoetry/virtualenvs/fibonaccicreator-6gE1vKXj-py3.8/lib/python3.8/site-packages/click/core.py", line 1066, in invoke 
-    return ctx.invoke(self.callback, **ctx.params)
-  File "/root/.cache/pypoetry/virtualenvs/fibonaccicreator-6gE1vKXj-py3.8/lib/python3.8/site-packages/click/core.py", line 610, in invoke  
-    return callback(*args, **kwargs)
-  File "/root/.cache/pypoetry/virtualenvs/fibonaccicreator-6gE1vKXj-py3.8/lib/python3.8/site-packages/typer/main.py", line 497, in wrapper 
-    return callback(**use_params)  # type: ignore
-  File "/project/fibonaccicreator/main.py", line 67, in fibonaccicreator
-    fibonacci_result = function_to_call(number)
-  File "/project/fibonaccicreator/fibonacci.py", line 35, in fibonacci_recursivetuple
-    x = fibonacci_recursivetuple(number - 1)
-  File "/project/fibonaccicreator/fibonacci.py", line 35, in fibonacci_recursivetuple
-    x = fibonacci_recursivetuple(number - 1)
-  File "/project/fibonaccicreator/fibonacci.py", line 35, in fibonacci_recursivetuple
-    x = fibonacci_recursivetuple(number - 1)
-  [Previous line repeated 986 more times]
-  File "/project/fibonaccicreator/fibonacci.py", line 28, in fibonacci_recursivetuple
-    if number == 0 or number == 1:
-RecursionError: maximum recursion depth exceeded in comparison
+🤷 So, was this an efficient approach for storing the Fibonacci sequence?
+
+Estimated overall memory according to the operating system:
+   37.46484375 megabytes
+
+Estimated peak memory according to the operating system:
+   34.890625 megabytes
+
+Estimated execution time according to the simple timer:
+    0.08 seconds
 ```
 
 ```
 🧳 Awesome, the chosen type of approach is the recursivetuple!
 
-🧮 The program will compute up to the 100th Fibonacci number!
+🧮 The program will compute up to the 500th Fibonacci number!
 
 🤷 So, was this an efficient approach for storing the Fibonacci sequence?
 
 Estimated overall memory according to the operating system:
-   29.15625 megabytes
+   29.7421875 megabytes
 
 Estimated peak memory according to the operating system:
-   34.97265625 megabytes
+   35.00390625 megabytes
 
 Estimated execution time according to the simple timer:
-    0.00 seconds
+    0.01 seconds
 ```
 
 #### Two outputs from running the `recursivelist`
@@ -135,50 +121,36 @@ Estimated execution time according to the simple timer:
 ```
 🧳 Awesome, the chosen type of approach is the recursivelist!
 
-🧮 The program will compute up to the 10000th Fibonacci number!
+🧮 The program will compute up to the 989th Fibonacci number!
 
-Traceback (most recent call last):
-  File "<string>", line 1, in <module>
-  File "/root/.cache/pypoetry/virtualenvs/fibonaccicreator-6gE1vKXj-py3.8/lib/python3.8/site-packages/typer/main.py", line 214, in __call__    return get_command(self)(*args, **kwargs)
-  File "/root/.cache/pypoetry/virtualenvs/fibonaccicreator-6gE1vKXj-py3.8/lib/python3.8/site-packages/click/core.py", line 829, in __call__    return self.main(*args, **kwargs)
-  File "/root/.cache/pypoetry/virtualenvs/fibonaccicreator-6gE1vKXj-py3.8/lib/python3.8/site-packages/click/core.py", line 782, in main    
-    rv = self.invoke(ctx)
-  File "/root/.cache/pypoetry/virtualenvs/fibonaccicreator-6gE1vKXj-py3.8/lib/python3.8/site-packages/click/core.py", line 1066, in invoke 
-    return ctx.invoke(self.callback, **ctx.params)
-  File "/root/.cache/pypoetry/virtualenvs/fibonaccicreator-6gE1vKXj-py3.8/lib/python3.8/site-packages/click/core.py", line 610, in invoke  
-    return callback(*args, **kwargs)
-  File "/root/.cache/pypoetry/virtualenvs/fibonaccicreator-6gE1vKXj-py3.8/lib/python3.8/site-packages/typer/main.py", line 497, in wrapper 
-    return callback(**use_params)  # type: ignore
-  File "/project/fibonaccicreator/main.py", line 67, in fibonaccicreator
-    fibonacci_result = function_to_call(number)
-  File "/project/fibonaccicreator/fibonacci.py", line 18, in fibonacci_recursivelist
-    x = fibonacci_recursivelist(number - 1)
-  File "/project/fibonaccicreator/fibonacci.py", line 18, in fibonacci_recursivelist
-    x = fibonacci_recursivelist(number - 1)
-  File "/project/fibonaccicreator/fibonacci.py", line 18, in fibonacci_recursivelist
-    x = fibonacci_recursivelist(number - 1)
-  [Previous line repeated 986 more times]
-  File "/project/fibonaccicreator/fibonacci.py", line 12, in fibonacci_recursivelist
-    if number == 0 or number == 1:
-RecursionError: maximum recursion depth exceeded in comparison
+🤷 So, was this an efficient approach for storing the Fibonacci sequence?
+
+Estimated overall memory according to the operating system:
+   35.328125 megabytes
+
+Estimated peak memory according to the operating system:
+   34.96875 megabytes
+
+Estimated execution time according to the simple timer:
+    0.08 seconds
 ```
 
 
 ```
 🧳 Awesome, the chosen type of approach is the recursivelist!
 
-🧮 The program will compute up to the 100th Fibonacci number!
+🧮 The program will compute up to the 500th Fibonacci number!
 
 🤷 So, was this an efficient approach for storing the Fibonacci sequence?
 
 Estimated overall memory according to the operating system:
-   29.16015625 megabytes
+   29.74609375 megabytes
 
 Estimated peak memory according to the operating system:
-   35.03125 megabytes
+   35.18359375 megabytes
 
 Estimated execution time according to the simple timer:
-    0.00 seconds
+    0.01 seconds
 ```
 
 ## Performance Analysis
