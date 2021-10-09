@@ -1,7 +1,8 @@
 """Compute values in the Fibonacci sequence using different approaches."""
 
 # Import all of the needed type annotations
-from typing import List, Tuple
+from typing import List
+from typing import Tuple
 
 def fibonacci_recursivelist(number: int) -> List[int]:
     """Start with 0 and compute up to and include the number-th Fibonacci number using recursion and a list."""
