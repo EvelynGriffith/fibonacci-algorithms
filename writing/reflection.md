@@ -16,9 +16,6 @@ TODO: Use the `--pyinstrument` command-line argument to open up a web-based disp
 of the call profile from running your program. You can use this output to understand
 the other profiling information that `fibonaccicreator` can produce.
 
-TODO: Do not run the program with the `--display` option when conducting
-experiments!
-
 TODO: Document and justify your choice for the `number` parameter.
 
 #### Two outputs from running the `iterativetuple`
@@ -29,8 +26,15 @@ TODO: Document and justify your choice for the `number` parameter.
 🧮 The program will compute up to the 10000th Fibonacci number!
 
 🤷 So, was this an efficient approach for storing the Fibonacci sequence?
+
+Estimated overall memory according to the operating system:
+   34.3984375 megabytes
+
+Estimated peak memory according to the operating system:
+   35.125 megabytes
+
 Estimated execution time according to the simple timer:
-    0.58 seconds
+    0.54 seconds
 ```
 
 ```
@@ -39,6 +43,13 @@ Estimated execution time according to the simple timer:
 🧮 The program will compute up to the 1000th Fibonacci number!
 
 🤷 So, was this an efficient approach for storing the Fibonacci sequence?
+
+Estimated overall memory according to the operating system:
+   29.15625 megabytes
+
+Estimated peak memory according to the operating system:
+   35.0859375 megabytes
+
 Estimated execution time according to the simple timer:
     0.01 seconds
 ```
@@ -51,8 +62,15 @@ Estimated execution time according to the simple timer:
 🧮 The program will compute up to the 10000th Fibonacci number!
 
 🤷 So, was this an efficient approach for storing the Fibonacci sequence?
+
+Estimated overall memory according to the operating system:
+   34.125 megabytes
+
+Estimated peak memory according to the operating system:
+   35.05078125 megabytes
+
 Estimated execution time according to the simple timer:
-    0.03 seconds
+    0.02 seconds
 ```
 
 ```
@@ -61,6 +79,13 @@ Estimated execution time according to the simple timer:
 🧮 The program will compute up to the 1000th Fibonacci number!
 
 🤷 So, was this an efficient approach for storing the Fibonacci sequence?
+
+Estimated overall memory according to the operating system:
+   29.1640625 megabytes
+
+Estimated peak memory according to the operating system:
+   35.02734375 megabytes
+
 Estimated execution time according to the simple timer:
     0.00 seconds
 ```
@@ -74,38 +99,28 @@ Estimated execution time according to the simple timer:
 
 Traceback (most recent call last):
   File "<string>", line 1, in <module>
-  File "C:\Users\gforc\AppData\Local\pypoetry\Cache\virtualenvs\fibonaccicreator-AfP9RwRP-py3.8\lib\site-packages\typer\main.py", line 214, in __call__     
-    return get_command(self)(*args, **kwargs)
-  File "C:\Users\gforc\AppData\Local\pypoetry\Cache\virtualenvs\fibonaccicreator-AfP9RwRP-py3.8\lib\site-packages\click\core.py", line 829, in __call__     
-    return self.main(*args, **kwargs)
-  File "C:\Users\gforc\AppData\Local\pypoetry\Cache\virtualenvs\fibonaccicreator-AfP9RwRP-py3.8\lib\site-packages\click\core.py", line 782, in main
+  File "/root/.cache/pypoetry/virtualenvs/fibonaccicreator-6gE1vKXj-py3.8/lib/python3.8/site-packages/typer/main.py", line 214, in __call__    return get_command(self)(*args, **kwargs)
+  File "/root/.cache/pypoetry/virtualenvs/fibonaccicreator-6gE1vKXj-py3.8/lib/python3.8/site-packages/click/core.py", line 829, in __call__    return self.main(*args, **kwargs)
+  File "/root/.cache/pypoetry/virtualenvs/fibonaccicreator-6gE1vKXj-py3.8/lib/python3.8/site-packages/click/core.py", line 782, in main    
     rv = self.invoke(ctx)
-  File "C:\Users\gforc\AppData\Local\pypoetry\Cache\virtualenvs\fibonaccicreator-AfP9RwRP-py3.8\lib\site-packages\click\core.py", line 1066, in invoke      
+  File "/root/.cache/pypoetry/virtualenvs/fibonaccicreator-6gE1vKXj-py3.8/lib/python3.8/site-packages/click/core.py", line 1066, in invoke 
     return ctx.invoke(self.callback, **ctx.params)
-  File "C:\Users\gforc\AppData\Local\pypoetry\Cache\virtualenvs\fibonaccicreator-AfP9RwRP-py3.8\lib\site-packages\click\core.py", line 610, in invoke       
+  File "/root/.cache/pypoetry/virtualenvs/fibonaccicreator-6gE1vKXj-py3.8/lib/python3.8/site-packages/click/core.py", line 610, in invoke  
     return callback(*args, **kwargs)
-  File "C:\Users\gforc\AppData\Local\pypoetry\Cache\virtualenvs\fibonaccicreator-AfP9RwRP-py3.8\lib\site-packages\typer\main.py", line 497, in wrapper      
+  File "/root/.cache/pypoetry/virtualenvs/fibonaccicreator-6gE1vKXj-py3.8/lib/python3.8/site-packages/typer/main.py", line 497, in wrapper 
     return callback(**use_params)  # type: ignore
-  File "C:\Users\gforc\computer-science-101-fall-2021-ee-fibonacci-algorithms-EvelynGriffith\fibonaccicreator\fibonaccicreator\main.py", line 67, in fibonaccicreator
+  File "/project/fibonaccicreator/main.py", line 67, in fibonaccicreator
     fibonacci_result = function_to_call(number)
-  File "C:\Users\gforc\computer-science-101-fall-2021-ee-fibonacci-algorithms-EvelynGriffith\fibonaccicreator\fibonaccicreator\fibonacci.py", line 35, in fibonacci_recursivetuple
+  File "/project/fibonaccicreator/fibonacci.py", line 35, in fibonacci_recursivetuple
     x = fibonacci_recursivetuple(number - 1)
-  File "C:\Users\gforc\computer-science-101-fall-2021-ee-fibonacci-algorithms-EvelynGriffith\fibonaccicreator\fibonaccicreator\fibonacci.py", line 35, in fibonacci_recursivetuple
+  File "/project/fibonaccicreator/fibonacci.py", line 35, in fibonacci_recursivetuple
     x = fibonacci_recursivetuple(number - 1)
-  File "C:\Users\gforc\computer-science-101-fall-2021-ee-fibonacci-algorithms-EvelynGriffith\fibonaccicreator\fibonaccicreator\fibonacci.py", line 35, in fibonacci_recursivetuple
+  File "/project/fibonaccicreator/fibonacci.py", line 35, in fibonacci_recursivetuple
     x = fibonacci_recursivetuple(number - 1)
-  [Previous line repeated 983 more times]
-  File "C:\Users\gforc\computer-science-101-fall-2021-ee-fibonacci-algorithms-EvelynGriffith\fibonaccicreator\fibonaccicreator\fibonacci.py", line 21, in fibonacci_recursivetuple
-    def fibonacci_recursivetuple(number: int) -> Tuple[int, ...]:
-  File "C:\Users\gforc\AppData\Local\pypoetry\Cache\virtualenvs\fibonaccicreator-AfP9RwRP-py3.8\lib\site-packages\pyinstrument\stack_sampler.py", line 137, 
-in _sample
-    call_stack = build_call_stack(frame, event, arg)
-  File "C:\Users\gforc\AppData\Local\pypoetry\Cache\virtualenvs\fibonaccicreator-AfP9RwRP-py3.8\lib\site-packages\pyinstrument\stack_sampler.py", line 189, 
-in build_call_stack
-    thread = threading.current_thread()
-  File "C:\Python38\lib\threading.py", line 1314, in current_thread
-    return _active[get_ident()]
-RecursionError: maximum recursion depth exceeded while calling a Python object
+  [Previous line repeated 986 more times]
+  File "/project/fibonaccicreator/fibonacci.py", line 28, in fibonacci_recursivetuple
+    if number == 0 or number == 1:
+RecursionError: maximum recursion depth exceeded in comparison
 ```
 
 ```
@@ -201,6 +216,7 @@ in build_call_stack
     return _active[get_ident()]
 RecursionError: maximum recursion depth exceeded while calling a Python object
 ```
+
 ```
 🧳 Awesome, the chosen type of approach is the recursivelist!
 

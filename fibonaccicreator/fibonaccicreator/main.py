@@ -10,7 +10,7 @@ import os
 import psutil  # type: ignore
 import time
 
-# from resource import getrusage, RUSAGE_SELF
+from resource import getrusage, RUSAGE_SELF
 
 from fibonaccicreator import fibonacci
 
@@ -79,20 +79,20 @@ def fibonaccicreator(
     console.print(
         "🤷 So, was this an efficient approach for storing the Fibonacci sequence?"
     )
-    # console.print("")
-    # process = psutil.Process(os.getpid())
+    console.print("")
+    process = psutil.Process(os.getpid())
     # display the estimated overall memory use as reported by the operating system
     # Reference:
     # https://stackoverflow.com/questions/938733/total-memory-used-by-python-process
-    # console.print("Estimated overall memory according to the operating system:")
-    # console.print("   " + format_bytes(process.memory_info().vms))
-    # console.print("")
+    console.print("Estimated overall memory according to the operating system:")
+    console.print("   " + format_bytes(process.memory_info().vms))
+    console.print("")
     # display the estimated peak memory use as reported by the operating system
     # Reference:
     # https://pythonspeed.com/articles/estimating-memory-usage/
-    # console.print("Estimated peak memory according to the operating system:")
-    # console.print("   " + format_bytes(getrusage(RUSAGE_SELF).ru_maxrss * 1024))
-    # console.print()
+    console.print("Estimated peak memory according to the operating system:")
+    console.print("   " + format_bytes(getrusage(RUSAGE_SELF).ru_maxrss * 1024))
+    console.print()
     # display a simplified execution time
     # Reference:
     # https://stackoverflow.com/questions/1557571/how-do-i-get-time-of-a-python-programs-execution
