@@ -55,6 +55,7 @@ def fibonaccicreator(
     console.print(
         f":abacus: The program will compute up to the {number}th Fibonacci number!"
     )
+
     console.print("")
     # construct the full name of the function to call
     function = FIBONACCI_FUNCTION_BASE + UNDERSCORE + approach
